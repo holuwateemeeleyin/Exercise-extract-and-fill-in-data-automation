@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExtractData" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1025,3838" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractData" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1025,4035" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
@@ -82,19 +82,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractData" sap:VirtualizedContainerService.HintSize="592,3773" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExtractData" sap:VirtualizedContainerService.HintSize="592,3970" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="530,3662" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b7727ddc-2e05-407c-af38-3874a8d315b6" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="530,3859" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b7727ddc-2e05-407c-af38-3874a8d315b6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3405" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3602" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Name" />
               <Variable x:TypeArguments="x:String" Name="PhoneNo" />
@@ -301,6 +301,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b7727ddc-2e05-407c-af38-3874a8d315b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/employees" DesignTimeRectangle="667, 469, 100, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Refresh'" FullSelectorArgument="&lt;webctrl id='buttonRefres' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buttonRefres' tag='BUTTON' type='button' class='skewBtn blue' aaname='Refresh' check:innerText='Refresh' /&gt;" Guid="a9e784a8-ea39-4876-9f38-9810b6e4aa24" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAsCAYAAACJ1f3bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJRSURBVHhe7Zu7bsIwFIb7Gp36RJV4FoZKPAEbS6WKvRv0ETowdGRqhaASUlGpUJfmFdwcO8ccXxKiqiFH4h8+oTiOHf7Plyy+KorCAL1AkHISQY8vX+b2/t3cjN7M9d0rOAOUNWVO2cc+AkGjp49sA+B8kAPpxAsie1zp4fnT7L9/goqgOyhrypzzlzPJC6IpxnK4DJwXlkQuuMwL4j0HM6c/KHtyQC64zAuiGwRfg36IPUCQMiBIORCkHAhSDgQpB4KUA0HKgSDlQJByFAg6mMnY9ZUw3ppl9pk8y/nKPztc5Ov8ldm0bHe6y97rEv4/fN2boDTQSlzrUOra+R8gKBfsYlO+w8bMfFk02/wM25khl3H5emsG5e+EgqUyDte2eawb9EvPiHuD+cHfc4I2QT9dDQYJ98XXigW5emloPKqjdqqwZf1EuK2zMpM1XTvJx/cIr21fvi4vp3LwdINiQdVskSM/2ZMoRA4tJ+gYaF0/NmjbRywoJFnikva7QY0g7i9ABCI/AELaCoqWQUnVT9CHlFFy8YLkyHVBhX/eljV+1bUTVDdDAsQ+xUskBEXBuTVfrPHx/pFwSpC7H+xJJ5CDAoKSkV0tSX7WuHpBSJmPiHpBJbZ+nbR4hoVCISgRVGJDkMHE+4icUS0ElcR7WfqVJ9oXQi5YEGgCgpQDQcqBIOVAkHIgSDkQpBwIUg4EKQeClFMrCMdP+qfx+AkOcPVP4wEuHIHsD8qa5RDZI5AEDhH3T+0hYobs0RTjPQl0D2VNmcuZwySCgC4gSDWF+QV8WN2x/ejxcwAAAABJRU5ErkJggg==" InformativeScreenshot="b96824a9fe658b5f1f5d0d6d20b92da5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Employees' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
